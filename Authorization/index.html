@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Authorization/autho.css" />
+    <title>Эврика</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/images/Logo.svg" alt="" class="logo" />
+      <div class="greeting">Добро пожаловать!</div>
+
+      <div class="form-container">
+        <div class="login-area">
+          <img src="/images/Iconlogin.svg" alt="" class="icon" />
+          <input
+            type="text"
+            class="input"
+            name="login"
+            name="input"
+            id="login"
+            placeholder="Логин"
+            required
+          />
+        </div>
+
+        <div class="password-area">
+          <div class="password-area-1"><img src="/images/Iconpassword.svg" alt="" class="icon" />
+          <input
+            type="password"
+            class="input"
+            id="password"
+            placeholder="Пароль"
+          /></div>
+          
+          <img src="/images/Groupeye.svg" alt="" class="eye">
+        </div>
+
+        <div class="checkbox-area">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="remember_me"
+            value="value"
+            class="checkbox"
+          />
+          <label for="remember_me" class="description">Запомнить меня</label>
+        </div>
+
+        <button id="login-btn">Вход</button>
+      </div>
+    </div>
+    <script src="/Authorization/autho.js"></script>
+    <!-- <script src="/scripts/classes.js"></script> -->
+    <script src="/scripts/requests.js"></script>
+    <!-- <script src="/scripts/script.js"></script> -->
+  </body>
+</html>

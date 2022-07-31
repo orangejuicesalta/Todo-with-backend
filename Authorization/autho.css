@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #001529;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* margin: 0, 495px, 230px, 445px; */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: larger;
+  margin-top: 50px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.login-area,
+.password-area {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+.password-area {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-area-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.eye {
+  cursor: pointer;
+}
+
+.input {
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.checkbox-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.description {
+    font-size: smaller;
+}
+
+button {
+  background-color: #029AAD;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size:medium;
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color:#029AAD;
+}
+
+button:active {
+    transform: scale(0.9);
+}

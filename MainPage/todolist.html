@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/MainPage/styles_todolist.css">
+    <title>To-do List</title>
+  </head>
+  <body>
+    <menu>
+      <div class="menu-top">
+        <img class="logo" src="/images/Frame.jpg" alt="" />
+
+          <div class="menu-element"><img src="/images/Iconsells.svg" alt="" class="icon" id="sells" />
+          <div>Продажи</div></div>
+        
+          <div class="menu-element"><img src="/images/Iconinventory.svg" alt="" class="icon" id="travel" />
+          <div>Перемещения</div></div>
+          
+          <div class="menu-element"><img src="/images/Filterfilter.svg" alt="" class="icon" id="edit" />
+          <div>Корректировка</div></div>
+          
+          <div class="menu-element"><img src="/images/Iconreport.svg" alt="" class="icon" id="report" />
+          <div>Отчеты по движению</div></div>
+          
+        </div>
+         
+
+      </div>
+      <div class="menu-bottom" onclick="signOut()">
+        <div class="exit-text">Exit</div>
+        <img src="/images/Iconlogout.svg" alt="" class="log-out-icon" />
+      </div>
+    </menu>
+
+    <main>
+      <div class="container">
+        <div class="nav-bar">
+          <div class="right_section">
+
+            <div class="back-arrow"> <img src="/images/Backarrow.svg" alt="" class="back-icon"></div>
+             
+            <div class="search">
+              <img src="/images/Iconsearch.svg" alt="" class="search-icon">
+             </div> 
+            <input type="text" class="search-bar" placeholder="Search">
+            </div>
+            <div class="search-button">
+              
+          </div>
+          <div class="left-section">
+            <img src="/images/Iconnotifications.svg" alt="" class="icon-notifications">
+            <img class="icon-settings" src="/images/Icon-settings.svg" alt="">
+            <div class="user-container">
+              <div><img src="/images/Ava-avatar.svg" alt="" class="avatar"></div>
+              <div class="user-info">
+                <div class="user-name">User</div>
+                <div class="user-position">Intern</div>
+              </div>
+              <img src="/images/Iconlogout.svg" alt="" class="log-out-icon" onclick="signOut()" />
+            </div>
+          </div>
+        </div>
+
+        <div class="todolist_container">
+              <h1 class="header">To-do List</h1>
+              <div class="task-input-container" >
+                <input type="text" class="input" placeholder="Title..." id="input-title">
+                <input class="input" id="input-task" type="text" placeholder="Description...">
+                <label class="checkbox-container"><input type="checkbox" id="task-finished" class="checkbox">Finished</label>
+                <button class="add-button" id="add-task">Add</button>
+              </div>
+
+                <div class="tasks-container" id="task-container">
+
+                  <div class="tasks-description">
+                    <h3 class="task-info-1">Title</h3>
+                    <h3 class="task-info-2">Description</h3>
+                    <h3 class="task-info-4">Status</h3>
+                  </div>
+                </div>   
+              </div>
+
+        </div>
+      </div>
+    </main>
+
+    <div class="modal-exit-back"></div>
+
+    <div class="modal-exit hidden">
+      <div>Are you sure you want to logout?</div>
+      <div class="options">
+        <button id="logout" class="exit-buttons">Yes, log out</button>
+        <button id="cancel-logout"
+        class="exit-buttons">Cancel</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+
+    <script src="/scripts/classes.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/requests.js"></script>
+    <script src="/MainPage/mainpage.js"></script>
+     
+
+  </body>
+</html>

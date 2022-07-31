@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #f2f7f8;
+  padding-top: 40px;
+  padding-left: 330px;
+  padding-right: 80px;
+  color: #001529;
+  position: relative;
+}
+
+menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 20px;
+  background-color: white;
+  color: #7f7f7f;
+}
+
+.menu-top {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: small;
+}
+
+.menu-bottom {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.menu-bottom:hover {
+  color: #001529;
+}
+
+.icon {
+  padding: 10px;
+  background-color: #ddeef2;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 17px;
+  fill: #029aad;
+}
+
+.menu-element:hover .icon {
+  box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.25);
+}
+
+.menu-element:hover {
+  color: #029aad;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right_section,
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.back-arrow,
+.search-button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.back-icon {
+  padding: 10px;
+  background-color: #ddeef2;
+  border-radius: 5px;
+}
+
+.back-icon:hover,
+.icon-notifications:hover,
+.icon-settings:hover {
+  box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.2);
+  fill: white;
+}
+
+.search {
+  margin-bottom: 5px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.search-bar {
+  font-size: larger;
+  border: none;
+  padding: 5px 1px;
+  background-color: transparent;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.search-bar:focus {
+  outline: none;
+  background-color: white;
+}
+
+.icon-notifications,
+.icon-settings {
+  padding: 10px;
+  background-color: #ddeef2;
+  border-radius: 10px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-position {
+  font-size: smaller;
+  color: #7f7f7f;
+}
+
+.log-out-icon {
+  cursor: pointer;
+}
+
+.todolist_container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.task-input-container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.input {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.checkbox-container {
+  padding: 5px;
+  cursor: pointer;
+  width: 100px;
+  display: flex;
+  gap: 7px;
+}
+
+
+.add-button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #029aad;
+  font-weight: bold;
+  background-color: #ddeef2;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  background-color: #029aad;
+  color: white;
+}
+
+.tasks-description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  color: #029aad;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.task-info-1 {
+  flex: 3;
+}
+
+.task-info-2,
+.task-info-3 {
+  flex: 2;
+}
+
+.task-info-4 {
+  flex: 4;
+  margin-right: 50px;
+}
+.tasks-container {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: #ddeef2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.task {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.task-title {
+  flex: 3;
+  padding: 5px;
+  color: #029aad;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.task-name {
+  flex: 2;
+  font-size: bold;
+}
+
+
+.complete-task,
+.delete-task {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #029aad;
+  font-weight: bold;
+  background-color: #ddeef2;
+  transition: all 0.3s;
+}
+
+.complete-task:hover {
+  color: white;
+  background-color: rgb(122, 207, 122);
+}
+
+.delete-task:hover {
+  color: white;
+  background-color: rgb(236, 137, 137);
+}
+
+.complete-task:active,
+.delete-task:active,
+.add-button:active {
+  transform: scale(0.98);
+}
+
+.header {
+  font-size: xx-large;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.status {
+  flex: 2;
+}
+
+.task-status {
+  color: rgb(22, 177, 22);
+  font-weight: bold;
+}
+
+.modal-exit {
+  position: fixed;
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 100;
+  right: 40%;
+  top: 40%;
+  border: 1px solid #029aad;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(43, 41, 49, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 90;
+}
+
+.hidden {
+  display: none;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-around;
+}
+
+.exit-buttons {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color:#029aad;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.exit-buttons:hover {
+  background-color: #029aad;
+  color: white;
+}
+
+
+@media (max-width: 1100px) {
+  menu {
+    width: 15%;
+  }
+  .menu-top,
+  .menu-bottom {
+    width: 25%;
+  }
+
+  body {
+    padding-left: 150px;
+    padding-right: 60px;
+  }
+
+  .right_section,
+  .left-section {
+    gap: 10px;
+  }
+  .todolist_container {
+    padding: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
